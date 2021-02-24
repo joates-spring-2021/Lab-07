@@ -20,6 +20,8 @@ replace_str( str, str, str ) -> str
 
 The notation above gives the name of each function, the number and type of its argument(s), and
 the type of its return value. The function names **shall** be spelled exactly as shown (for example, is_digit).
+Each function **shall** contain a docstring (a string literal occurring as the first statement of the function)
+that briefly describes what the function does.
 
 1. Function is_alpha has one parameter (a string). It returns True if all of the characters in
 the string are upper case or lower case ASCII letters (it returns False otherwise).
