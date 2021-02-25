@@ -23,33 +23,33 @@ the type of its return value. The function names **shall** be spelled exactly as
 Each function **shall** contain a docstring (a string literal occurring as the first statement of the function)
 that briefly describes what the function does.
 
-1. Function is_alpha has one parameter (a string). It returns True if all of the characters in
+1. Function _is_alpha_ has one parameter (a string). It returns True if all of the characters in
 the string are upper case or lower case ASCII letters (it returns False otherwise).
-2. Function is_digit has one parameter (a string). It returns True if all of the characters in
+2. Function _is_digit_ has one parameter (a string). It returns True if all of the characters in
 the string are ASCII decimal digits (it returns False otherwise).
-3. Function to_lower has one parameter (a string). It returns the string which is a copy of the
+3. Function _to_lower_ has one parameter (a string). It returns the string which is a copy of the
 parameter, but where all of the upper case ASCII letters have been converted to lower case
-ASCII letters.
-4. Function to_upper has one parameter (a string). It returns the string which is a copy of the
+ASCII letters. Any digits or lower case letters will be left alone.
+4. Function _to_upper_ has one parameter (a string). It returns the string which is a copy of the
 parameter, but where all of the lower case ASCII letters have been converted to upper case
-ASCII letters.
-5. Function find_chr has two parameters (both strings), where the second parameter must be
+ASCII letters. Any digits or upper case letters will be left alone.
+5. Function _find_chr_ has two parameters (both strings), where the second parameter must be
 of length 1. It returns the lowest index where the second parameter is found within the first
 parameter (it returns -1 if the second parameter is not of length 1 or is not found within the first
 parameter).
-6. Function find_str has two parameters (both strings). It returns the lowest index where the
+6. Function _find_str_ has two parameters (both strings). It returns the lowest index where the
 second parameter is found within the first parameter (it returns -1 if the second parameter is not
 found within the first parameter).
-7. Function replace_chr has three parameters (all strings), where the second and third
+7. Function _replace_chr_ has three parameters (all strings), where the second and third
 parameters must be of length 1. It returns the string which is a copy of the first parameter, but
 where all occurrences of the second parameter have been replaced by the third parameter (it
-returns the empty string if the second or third parameter are not of length 1).
-8. Function replace_str has three parameters (all strings). It returns the string which is a
+returns the empty string if the second or third parameter are not of length 1). If there are no occurrences 
+of the second parameter in the first, it returns a copy of the first parameter.
+8. Function _replace_str_ has three parameters (all strings). It returns the string which is a
 copy of the first parameter, but where all occurrences of the second parameter have been
 replaced by the third parameter. If there are no occurrences of the second parameter in the first,
-it returns a copy of the first parameter. If the second parameter is the empty string, it returns the
-string which is a copy of the first parameter, but with the third parameter inserted before the first
-character, between each character, and after the last character.
+it returns a copy of the first parameter. If the second parameter is the empty string, it returns a
+copy of the first parameter.
 
 9. The library module **shall not** use any of the string methods listed in Section 4.7.1 of the [Python
 Standard Library](http://docs.python.org/3.3/library/stdtypes.html#string-methods)
