@@ -3,12 +3,12 @@ In this lab you will implement your own version of built in string manipulation 
 
 # Assignment Requirements and Specifications
 The library module will contain three constants and eight function definitions.
-It will include the following constants:
+It will include the following constants (provided for you):
 >ASCII_LOWERCASE = "abcdefghijklmnopqrstuvwxyz"  
 ASCII_UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"  
 DECIMAL_DIGITS = "0123456789"
 
-It will include the following functions:
+It will include the following functions (you will define these):
 >is_alpha( str ) -> bool  
 is_digit( str) -> bool  
 to_lower( str ) -> str  
