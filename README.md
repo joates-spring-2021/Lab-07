@@ -24,7 +24,9 @@ Each function **shall** contain a docstring (a string literal occurring as the f
 that briefly describes what the function does.
 
 1. Function _is_alpha_ has one parameter (a string). It returns True if all of the characters in
-the string are upper case or lower case ASCII letters (it returns False otherwise).
+the string are either upper case or lower case ASCII letters (it returns False otherwise). In other words,
+the string "Hello" would return True because it has letters.  The string "37" would return False because
+it has numbers.
 2. Function _is_digit_ has one parameter (a string). It returns True if all of the characters in
 the string are ASCII decimal digits (it returns False otherwise).
 3. Function _to_lower_ has one parameter (a string). It returns the string which is a copy of the
